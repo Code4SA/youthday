@@ -2789,10 +2789,18 @@ only screen and (max-device-width: 500px) {
 
 /* Additional CSS */
 
-
+#headline, #standfirst {
+    margin-bottom:10px;
+}
 #headline h1 {
     text-align: center;
     font-family: 'Playfair Display', sans-serif;
     font-size:2.8em;
     font-weight:600;
+}
+#standfirst p {
+    text-align:justify;
+    font-family:'Gudea', sans-serif;
+    font-size:14px;
+    color:#737373;
 }
