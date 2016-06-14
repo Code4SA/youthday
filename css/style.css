@@ -266,14 +266,14 @@
 .tl-timeline h2.tl-headline-title {
     font-family: 'Gudea', sans-serif;
     font-size: 38px;
-    line-height: 38px
+    line-height: 38px;
 }
 .tl-timeline h2.tl-headline-title small {
     font-family: 'Gudea', sans-serif;
     display: block;
     margin-top: 5px;
     font-size: 24px;
-    line-height: 24px
+    line-height: 24px;
 }
 .tl-timeline h2 {
     margin-top: 20px;
@@ -282,7 +282,7 @@
 .tl-timeline p {
     margin-top: 5px;
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.42857143;
     color: #666
 }
@@ -290,12 +290,12 @@
     font-size: 24px
 }
 .tl-timeline p a {
-    color: #666;
+    color: #1d91c0;
     text-decoration: underline
 }
 .tl-timeline p a:hover,
 .tl-timeline p a:focus {
-    color: #c34528
+    color: #225ea8
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
@@ -2397,18 +2397,24 @@ only screen and (max-device-width: 500px) {
     vertical-align: middle;
     text-align: left;
     text-shadow: none;
-    color: #737373
+    color: #737373;
 }
 .tl-text p {
-    color: #737373
+    color: #737373;
+    font-family:'Gudea', sans-serif;
+    text-align:justify;
 }
 .tl-text h2.tl-headline-title,
 .tl-text h2.tl-headline {
-    margin-top: 0
+    margin-top: 0;
+    font-family: 'Playfair Display', sans-serif;
+    font-size:38px;
+    line-height: 1.3em;
+    font-weight:400;
 }
 .tl-text .tl-headline-date,
 .tl-text h3.tl-headline-date {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Gudea', sans-serif;
     font-size: 15px;
     line-height: 15px;
     font-weight: 400;
@@ -2786,6 +2792,7 @@ only screen and (max-device-width: 500px) {
 
 #headline h1 {
     text-align: center;
-    font-family: 'Gudea', sans-serif;
+    font-family: 'Playfair Display', sans-serif;
     font-size:2.8em;
+    font-weight:600;
 }
