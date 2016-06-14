@@ -2804,3 +2804,10 @@ only screen and (max-device-width: 500px) {
     font-size:14px;
     color:#737373;
 }
+#exhibition {
+    margin-top:15px;
+    text-align:justify;
+    font-family:'Gudea', sans-serif;
+    font-size:14px;
+    color:#737373;
+}
