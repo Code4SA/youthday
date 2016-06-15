@@ -27,6 +27,13 @@
 
 @import url(https://fonts.googleapis.com/css?family=Lato|Open+Sans|Open+Sans+Condensed:300|Playfair+Display|Gudea);
 
+html, body {width:100%;height:100%;margin-top:0;margin-bottom:0;margin-left:0;margin-right:0;}
+#timeline-embed {
+    position: relative!important;
+    top: 50%!important;
+    transform: translateY(-50%)!important;
+}
+
 .tl-storyjs div * {
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
@@ -2799,6 +2806,8 @@ only screen and (max-device-width: 500px) {
 
 /* Additional CSS */
 
+.hidden {display:none;}
+
 #headline, #standfirst {
     margin-top:10px;
     margin-bottom:10px;
@@ -2815,23 +2824,26 @@ only screen and (max-device-width: 500px) {
     font-size:14px;
     color:#737373;
 }
-#exhibition {
-    margin-top:30px;
-    text-align:justify;
-    font-family:'Gudea', sans-serif;
-    font-size:14px;
-    color:#737373;
-}
 #vizOverlay {
     position: absolute;
     z-index:9999;
-    background-color:#333;
+    background-color:#efefef;
     width: 100%;
-    height:600px;
-    margin-top: 115px;
+    height:100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top:0;
+    margin-bottom:0;
+    border: 1px solid #e5e5e5;
+    text-align:center;
 }
 #vizOverlay h2 {
     font-size:25px;
     color:white;
     font-family:'Gudea', sans-serif;
+}
+#contentOverlay {
+    position: relative!important;
+    top: 50%!important;
+    transform: translateY(-50%)!important;
 }

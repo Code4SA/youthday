@@ -12,27 +12,24 @@
     <link title="timeline-styles" rel="stylesheet" href="css/style.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-
-
   </head>
+
+
+
   <body>
-
-  <div id="headline">
-  <h1>The events that would become June 16, 1976</h1>
-  <div id="standfirst" class="col-xs-12 col-md-8 col-md-offset-2"><p>Aliquam tempor ligula a urna dignissim, ac dapibus leo rhoncus. Praesent enim diam, posuere nec iaculis id, convallis eget urna. Duis non vehicula justo. Quisque vitae rutrum diam, et suscipit risus. Vivamus sed tempus turpis, sit amet eleifend massa. Sed sed nisl lacus. Praesent et tellus ligula. Nulla eu magna a nunc dictum commodo. Integer luctus dolor in est vulputate pharetra. Integer fermentum metus a elit malesuada, eget elementum ligula finibus. Aliquam rutrum tempor ex eget consectetur. Curabitur hendrerit dictum lacus vitae auctor. Nulla facilisi. In consectetur tortor vitae pretium efficitur. Vivamus sollicitudin leo ac magna consequat congue.</p></div>
-  </div>
-
-  <div id="vizContainer">
     <div id="vizOverlay">
-      <h2>Testing Overlay</h2>
-      <button id="hideOverlay" type="button" class="btn btn-default">Enter Timeline</button>
+      <div id="contentOverlay">
+      <div id="headline"><h1>June 16, The day that ignited the flames of freedom</h1></div>
+      <div class="row">
+      <div id="standfirst" class="col-xs-12 col-md-8 col-md-offset-2"><p>June 16, 1976, 40 years ago today: a spark ignited by students on the dusty streets of Soweto set in motion a chain of events that would play a key role in the birth of a new democratic South Africa, 18 years later. That fatal day began with peaceful protests but soon escalated into bloodshed, as ill-prepared police opened fire with live ammunition on unarmed students protesting against the implementation of Afrikaans as a medium of instruction in black schools. The youth-led wildfire of protests quickly spread across South Africa. With the death toll mounting, police and the army moved into townships where government and official property was put to the torch. But the first seeds were planted as far back as 1953, with the implementation of the hated Bantu Education Act that condemned black pupils to decades of inferior education.</p></div>
+      <div id="exhibition" class="col-xs-12 col-md-8 col-md-offset-2 hidden"><p>Integer fermentum metus a elit malesuada, eget elementum ligula finibus. Aliquam rutrum tempor ex eget consectetur. Curabitur hendrerit dictum lacus vitae auctor. Nulla facilisi. In consectetur tortor vitae pretium efficitur. Vivamus sollicitudin leo ac magna consequat congue.</p></div>
+      <div class="col-xs-12 col-md-8 col-md-offset-2"><button id="hideOverlay" type="button" class="btn btn-default">Enter Timeline</button>
+      <button id="infoExhibition" type="button" class="btn btn-default">Exhibition</button></div>
+      </div>
     </div>
+    </div>
+
     <div id='timeline-embed' style="width: 100%; height: 600px"></div>
-  </div>
-
-  <div id="exhibition" class="col-xs-12 col-md-8 col-md-offset-2"><p>Aliquam tempor ligula a urna dignissim, ac dapibus leo rhoncus. Praesent enim diam, posuere nec iaculis id, convallis eget urna. Duis non vehicula justo. Quisque vitae rutrum diam, et suscipit risus. Vivamus sed tempus turpis, sit amet eleifend massa. Sed sed nisl lacus. Praesent et tellus ligula. Nulla eu magna a nunc dictum commodo. Integer luctus dolor in est vulputate pharetra. Integer fermentum metus a elit malesuada, eget elementum ligula finibus. Aliquam rutrum tempor ex eget consectetur. Curabitur hendrerit dictum lacus vitae auctor. Nulla facilisi. In consectetur tortor vitae pretium efficitur. Vivamus sollicitudin leo ac magna consequat congue.</p></div>
-
 
     <!-- functionality -->
     <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
@@ -54,6 +51,11 @@
     <script type="text/javascript">
       $( "#hideOverlay" ).click(function() {
       $( "#vizOverlay" ).fadeOut( "slow" );
+      });
+
+      $( "#infoExhibition" ).click(function() {
+      $( "#standfirst" ).addClass("hidden");
+      $( "#exhibition" ).removeClass("hidden").show();
       });
     </script>
 
