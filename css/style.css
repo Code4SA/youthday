@@ -2785,11 +2785,22 @@ only screen and (max-device-width: 500px) {
     box-shadow: 0 -3px 6px rgba(0, 0, 0, .2)
 }
 
+.tl-credit a {
+    color:#737373;
+    font-family:'Gudea', sans-serif;
+}
+
+.tl-timeline .tl-caption {
+    font-family:'Gudea', sans-serif;
+    font-size:14px;
+    color:#333;
+}
 
 
 /* Additional CSS */
 
 #headline, #standfirst {
+    margin-top:10px;
     margin-bottom:10px;
 }
 #headline h1 {
@@ -2805,9 +2816,22 @@ only screen and (max-device-width: 500px) {
     color:#737373;
 }
 #exhibition {
-    margin-top:15px;
+    margin-top:30px;
     text-align:justify;
     font-family:'Gudea', sans-serif;
     font-size:14px;
     color:#737373;
+}
+#vizOverlay {
+    position: absolute;
+    z-index:9999;
+    background-color:#333;
+    width: 100%;
+    height:600px;
+    margin-top: 115px;
+}
+#vizOverlay h2 {
+    font-size:25px;
+    color:white;
+    font-family:'Gudea', sans-serif;
 }

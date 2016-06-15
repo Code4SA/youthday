@@ -18,11 +18,18 @@
   </head>
   <body>
 
-  <div id="headline"><h1>The events that would become June 16, 1976</h1></div>
-
+  <div id="headline">
+  <h1>The events that would become June 16, 1976</h1>
   <div id="standfirst" class="col-xs-12 col-md-8 col-md-offset-2"><p>Aliquam tempor ligula a urna dignissim, ac dapibus leo rhoncus. Praesent enim diam, posuere nec iaculis id, convallis eget urna. Duis non vehicula justo. Quisque vitae rutrum diam, et suscipit risus. Vivamus sed tempus turpis, sit amet eleifend massa. Sed sed nisl lacus. Praesent et tellus ligula. Nulla eu magna a nunc dictum commodo. Integer luctus dolor in est vulputate pharetra. Integer fermentum metus a elit malesuada, eget elementum ligula finibus. Aliquam rutrum tempor ex eget consectetur. Curabitur hendrerit dictum lacus vitae auctor. Nulla facilisi. In consectetur tortor vitae pretium efficitur. Vivamus sollicitudin leo ac magna consequat congue.</p></div>
+  </div>
 
-  <div id='timeline-embed' style="width: 100%; height: 600px"></div>
+  <div id="vizContainer">
+    <div id="vizOverlay">
+      <h2>Testing Overlay</h2>
+      <button id="hideOverlay" type="button" class="btn btn-default">Enter Timeline</button>
+    </div>
+    <div id='timeline-embed' style="width: 100%; height: 600px"></div>
+  </div>
 
   <div id="exhibition" class="col-xs-12 col-md-8 col-md-offset-2"><p>Aliquam tempor ligula a urna dignissim, ac dapibus leo rhoncus. Praesent enim diam, posuere nec iaculis id, convallis eget urna. Duis non vehicula justo. Quisque vitae rutrum diam, et suscipit risus. Vivamus sed tempus turpis, sit amet eleifend massa. Sed sed nisl lacus. Praesent et tellus ligula. Nulla eu magna a nunc dictum commodo. Integer luctus dolor in est vulputate pharetra. Integer fermentum metus a elit malesuada, eget elementum ligula finibus. Aliquam rutrum tempor ex eget consectetur. Curabitur hendrerit dictum lacus vitae auctor. Nulla facilisi. In consectetur tortor vitae pretium efficitur. Vivamus sollicitudin leo ac magna consequat congue.</p></div>
 
@@ -44,8 +51,11 @@
       // See below for more about options.
       timeline = new TL.Timeline('timeline-embed','https://docs.google.com/spreadsheets/d/17aO7ZpAjTBeEw7ZtDnWG-ExuobFQKdUdpKmY73JHJ68/pubhtml');
     </script>
-
-<!-- https://docs.google.com/spreadsheets/d/1cWqQBZCkX9GpzFtxCWHoqFXCHg-ylTVUWlnrdYMzKUI/pubhtml -->
+    <script type="text/javascript">
+      $( "#hideOverlay" ).click(function() {
+      $( "#vizOverlay" ).fadeOut( "slow" );
+      });
+    </script>
 
   </body>
 </html>
