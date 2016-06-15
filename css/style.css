@@ -2819,10 +2819,13 @@ only screen and (max-device-width: 500px) {
     color:#000;
 }
 #standfirst p {
-    text-align:center;
+    text-align:justify;
     font-family:'Gudea', sans-serif;
     font-size:14px;
-    color:#737373;
+    color:#eee;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 15px;
 }
 #vizOverlay {
     position: absolute;
@@ -2860,11 +2863,18 @@ only screen and (max-device-width: 500px) {
     font-size: 12px;
 }
 .btn-default {
-    background-color: #efefef;
+    color: #bfbfbf!important;
+    background-color: #000!important;
+
+    border-radius:10px!important;
 }
 #exhibition {
     text-align:center;
 }
 #buttons {
     margin-top:10px;
+}
+#credit {
+    font-family:'Gudea', sans-serif;
+    margin-top:25px;
 }
