@@ -2816,6 +2816,7 @@ only screen and (max-device-width: 500px) {
     font-family: 'Playfair Display', sans-serif;
     font-size:2.8em;
     font-weight:500;
+    color:#000;
 }
 #standfirst p {
     text-align:center;
@@ -2850,6 +2851,7 @@ only screen and (max-device-width: 500px) {
 .textLarge {
     font-size: 60px;
     line-height: 1.5em;
+    color:#000;
 }
 .btn {
     font-family:'Gudea', sans-serif;
