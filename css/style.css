@@ -2829,6 +2829,7 @@ only screen and (max-device-width: 500px) {
     z-index:9999;
     background-color:#efefef;
     background-image: url('http://code4sa.org/youthday/imgs/poster-bg.jpg');
+    background-size:cover;
     width: 100%;
     height:100%;
     margin-left: 0;
