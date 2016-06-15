@@ -2869,7 +2869,12 @@ only screen and (max-device-width: 500px) {
     border-radius:10px!important;
 }
 #exhibition {
+    text-align: justify;
+    color:#eee;
     text-align:center;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 15px;
 }
 #buttons {
     margin-top:10px;
