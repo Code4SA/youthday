@@ -1741,7 +1741,9 @@ only screen and (max-device-width: 500px) {
     display: table;
     table-layout: fixed;
     height: 100%;
-    z-index: 1
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
 }
 .tl-slide .tl-slide-content-container {
     display: table-cell;
