@@ -2810,6 +2810,11 @@ only screen and (max-device-width: 500px) {
 .hidden {display:none;}
 a {
     color:#c30f0f!important;
+    text-decoration:none!important;
+}
+
+a:hover, a:focus {
+    color: #9a1919!important;
 }
 #headline, #standfirst {
     margin-top:10px;
@@ -2884,14 +2889,14 @@ a {
     padding:10px;
 }
 #infoEmbed a {
-    color: #000;
+    color: #000!important;
     font-family: 'Gudea';
     text-transform: uppercase;
     font-size: 12px;
 }
 #infoEmbed a:hover {
-    color:#c30f0f;
-    text-decoration:none;
+    color:#c30f0f!important;
+    text-decoration:none!important;
 }
 #credit {
     font-family:'Gudea', sans-serif;
