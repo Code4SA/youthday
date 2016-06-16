@@ -344,7 +344,7 @@ html, body {width:100%;height:100%;margin-top:0;margin-bottom:0;margin-left:0;ma
 .tl-timeline .tl-credit a,
 .tl-timeline .tl-slidenav-next a,
 .tl-timeline .tl-slidenav-previous a {
-    color: #000
+    color: #333!important;
 }
 .tl-timeline .tl-makelink {
     word-break: break-all;
