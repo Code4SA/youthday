@@ -7,19 +7,19 @@
     If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
 */
 /*!
-    Timeline JS 3 
-    
+    Timeline JS 3
+
     Designed and built by Zach Wise for the Northwestern University Knight Lab
-    
+
     This Source Code Form is subject to the terms of the Mozilla Public
     License, v. 2.0. If a copy of the MPL was not distributed with this
     file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
 *//*!
-    Timeline JS 3 
-    
+    Timeline JS 3
+
     Designed and built by Zach Wise for the Northwestern University Knight Lab
-    
+
     This Source Code Form is subject to the terms of the Mozilla Public
     License, v. 2.0. If a copy of the MPL was not distributed with this
     file, You can obtain one at https://mozilla.org/MPL/2.0/.
@@ -1938,9 +1938,45 @@ only screen and (max-device-width: 500px) {
     -webkit-flex-direction: column-reverse;
     position: static;
     height: auto;
-    padding-left: 50px;
-    padding-right: 50px
 }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+    .tl-skinny .tl-slide .tl-slide-content-container .tl-slide-content {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        width: 100% !important;
+    }
+    .tl-skinny .tl-slide .tl-slide-content-container .tl-slide-content .tl-media {
+        max-width: 100% !important;
+    }
+    .tl-slide .tl-slide-scrollable-container {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .tl-skinny .tl-slide .tl-slide-content-container .tl-slide-content {
+        padding-left: 29px !important;
+        padding-right: 29px !important;
+    }
+    .tl-slide .tl-slide-scrollable-container {
+        margin-left: 29px !important;
+        margin-right: 29px !important;
+    }
+}
+
+@media only screen  and (min-width : 1824px) {
+    .tl-skinny .tl-slide .tl-slide-content-container .tl-slide-content {
+        padding-left: 49px !important;
+        padding-right: 49px !important;
+    }
+    .tl-slide .tl-slide-scrollable-container {
+        margin-left: 49px !important;
+        margin-right: 49px !important;
+    }
+}
+
 .tl-skinny .tl-slide .tl-slide-content-container .tl-slide-content .tl-media {
     position: static;
     width: 100%;
