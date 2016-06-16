@@ -2878,10 +2878,24 @@ only screen and (max-device-width: 500px) {
     padding: 10px;
     border-radius: 15px;
 }
-#buttons {
-    margin-top:10px;
+#infoEmbed {
+    padding:10px;
+}
+#infoEmbed a {
+    color: #000;
+    font-weight: 600;
+    font-family: 'Gudea';
+    text-transform: uppercase;
+    font-size: 12px;
+}
+#infoEmbed a:hover {
+    color:#c30f0f;
+    text-decoration:none;
 }
 #credit {
     font-family:'Gudea', sans-serif;
     margin-top:25px;
+    color: #eee;
+    background-color: #000;
+    padding: 2px 8px;
 }
