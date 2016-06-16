@@ -297,12 +297,12 @@ html, body {width:100%;height:100%;margin-top:0;margin-bottom:0;margin-left:0;ma
     font-size: 24px
 }
 .tl-timeline p a {
-    color: #1d91c0;
+    color: #c30f0f;
     text-decoration: underline
 }
 .tl-timeline p a:hover,
 .tl-timeline p a:focus {
-    color: #225ea8
+    color: #9a1919
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
@@ -2808,7 +2808,9 @@ only screen and (max-device-width: 500px) {
 /* Additional CSS */
 
 .hidden {display:none;}
-
+a {
+    color:#c30f0f!important;
+}
 #headline, #standfirst {
     margin-top:10px;
     margin-bottom:10px;
