@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8" name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    
+
     <title>Youthday</title>
 
     <!-- 1 -->
@@ -53,15 +53,17 @@
     <script type="text/javascript">
       $( "#hideOverlay" ).click(function() {
       $( "#vizOverlay" ).fadeOut( "slow" );
-      ga('send', 'event', 'Enter Timeline', 'clicked');      
+      ga('send', 'event', 'Enter Timeline', 'clicked');
+          console.log("sendy");
+          pymChild.sendMessage("childShrank", 600);
       });
 
       $( "#infoExhibition" ).click(function() {
       $( "#standfirst" ).addClass("hidden");
       $( "#exhibition" ).removeClass("hidden").show();
-      ga('send', 'event', 'Info Exhibition', 'clicked');            
+      ga('send', 'event', 'Info Exhibition', 'clicked');
       });
-      
+
     </script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -76,7 +78,7 @@
     var pos = 0;
     var finished = false;
       $("#visitExhibition").click(function() {
-        ga('send', 'event', 'Visit Exhibition', 'clicked');            
+        ga('send', 'event', 'Visit Exhibition', 'clicked');
       });
 
       $(".tl-slidenav-next").click(function() {
@@ -86,12 +88,19 @@
             console.log("reached end")
             finished = true;
         }
-        ga('send', 'event', 'Next slide', 'clicked');            
+        ga('send', 'event', 'Next slide', 'clicked');
       });
 
       $(".tl-slidenav-previous").click(function() {
         pos--;
-        ga('send', 'event', 'Previous slide', 'clicked');            
+        ga('send', 'event', 'Previous slide', 'clicked');
+      });
+    </script>
+    <script src="js/pym.js"></script>
+    <script type="text/javascript">
+      var pymChild = new pym.Child({
+        id: 'code4sa-embed-stockout',
+        polling: 1000
       });
     </script>
   </body>
